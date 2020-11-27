@@ -38,7 +38,7 @@ class Utils {
         for (kotlinFan in kotlinFans) {
             javaFans
                     .filter { kotlinFan.id == it.id }
-                    .forEach { userWhoLovesBoth.add(kotlinFan) }
+                    .forEach { _ -> userWhoLovesBoth.add(kotlinFan) }
         }
         return userWhoLovesBoth
     }
